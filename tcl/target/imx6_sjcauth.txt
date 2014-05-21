@@ -1,0 +1,2 @@
+# This file contains challenge response pairs in hex format, one per line
+# 0x<challenge> 0x<response>
