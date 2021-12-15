@@ -1232,16 +1232,7 @@ fi
 AC_DEFINE([_GNU_SOURCE],[1],[Use GNU C library extensions (e.g. stdndup).])
 
 # set default gcc warnings
-GCC_WARNINGS="-Wall -Wstrict-prototypes -Wformat-security -Wshadow"
-if test "${gcc_wextra}" = yes; then
-  GCC_WARNINGS="${GCC_WARNINGS} -Wextra -Wno-unused-parameter"
-  GCC_WARNINGS="${GCC_WARNINGS} -Wbad-function-cast"
-  GCC_WARNINGS="${GCC_WARNINGS} -Wcast-align"
-  GCC_WARNINGS="${GCC_WARNINGS} -Wredundant-decls"
-fi
-if test "${gcc_werror}" = yes; then
-  GCC_WARNINGS="${GCC_WARNINGS} -Werror"
-fi
+GCC_WARNINGS=""
 
 # overide default gcc cflags
 if test $gcc_warnings = yes; then
